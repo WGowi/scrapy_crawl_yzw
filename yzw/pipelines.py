@@ -54,7 +54,7 @@ class YzwPipeline:
         self.start_time = time.time()
         # ****************************************************
         # 连接数据库
-        self.db = pymysql.connect(host='localhost', user='数据库用户名', password='数据库秘密', database='YZW')
+        self.db = pymysql.connect(host='localhost', user='数据库用户名', password='数据库密码', database='YZW')
         self.cursor = self.db.cursor()
         # 使用 execute() 方法执行 SQL，如果表存在则删除
         sql = "DROP TABLE IF EXISTS Admissions_Information"
